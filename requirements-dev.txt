@@ -1,0 +1,5 @@
+# Pinned developer tooling. Versions are pinned so local runs and CI produce
+# identical formatting and lint results.
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements-dev.txt
+clang-format==18.1.8
+clang-tidy==18.1.8

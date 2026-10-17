@@ -1,0 +1,58 @@
+# --- Build output ------------------------------------------------------------
+/build/
+/out/
+/cmake-build-*/
+CMakeUserPresets.json
+compile_commands.json
+Testing/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# --- Python tooling (scripts/, reference harness) -----------------------------
+/.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Model weights and large artifacts: never commit ---------------------------
+/models/
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.npy
+*.npz
+# Small golden test fixtures are the exception and are tracked explicitly.
+!/tests/golden/**
+
+# --- Profiling / benchmarking scratch -------------------------------------------
+perf.data*
+*.trace/
+*.profraw
+*.profdata
+callgrind.out.*
+/bench/results/tmp/
+
+# --- Editors / IDEs ----------------------------------------------------------
+/.idea/
+/.vscode/
+/.vs/
+/.cache/
+/.clangd
+*.swp
+*.swo
+*~
+
+# --- OS ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db

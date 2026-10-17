@@ -1,0 +1,13 @@
+---
+# GoogleTest macros expand to code that trips several checks; relax them for tests only.
+InheritParentConfig: true
+Checks: >
+  -cert-err58-cpp,
+  -cppcoreguidelines-avoid-goto,
+  -cppcoreguidelines-avoid-non-const-global-variables,
+  -cppcoreguidelines-owning-memory,
+  -cppcoreguidelines-special-member-functions,
+  -misc-use-anonymous-namespace,
+  -modernize-use-equals-delete,
+  -readability-function-size
+...
